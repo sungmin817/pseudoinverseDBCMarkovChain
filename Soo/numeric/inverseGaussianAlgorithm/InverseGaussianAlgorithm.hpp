@@ -64,7 +64,7 @@ private:
 
 template <class Element = double
 //		  , class Ordering = NodeIndexOrdering<>
-		  , class Index = std::size_t
+          , class Index = std::size_t
 		  , class ResultGetter = DiagonalGetter<Index>
 		  , class IgnoreCoupling = std::false_type>
 class Matrix{
@@ -72,8 +72,8 @@ public:
 	typedef std::vector<Element> DiagonalWeight;
 	typedef	DynamicAdjList<std::vector
 				, std::map, Index, Index, Index, Element> Graph;
-//    using Ordering = NodeIndexOrdering<>;
-    using Ordering = MinDegreeOrdering<Graph>;
+    using Ordering = NodeIndexOrdering<>;
+//    using Ordering = MinDegreeOrdering<Graph>;
 
 public:
     Matrix(DiagonalWeight diag, Graph weight, Element coupStr = {1.0})

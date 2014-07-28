@@ -23,7 +23,6 @@ int main()
 
     MatType::DiagonalWeight diag = {{-3.0, 1.0}, {-2.0,1.0}, {-2.0,1.0}, {-1.0,1.0}};
     MatType mat(std::move(diag), std::move(g));
-
     mat.killAll();
     auto res = mat.getResult();
 

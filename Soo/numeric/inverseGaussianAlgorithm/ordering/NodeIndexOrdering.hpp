@@ -19,7 +19,7 @@ public:
 		return index;
 	}
 
-	void pop(){
+    void pop(Index){
 		if(IsReverse::value){
 			--index;
 		}
