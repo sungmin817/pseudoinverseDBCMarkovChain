@@ -72,8 +72,8 @@ public:
 	typedef std::vector<Element> DiagonalWeight;
 	typedef	DynamicAdjList<std::vector
 				, std::map, Index, Index, Index, Element> Graph;
-    using Ordering = NodeIndexOrdering<>;
-//    using Ordering = MinDegreeOrdering<Graph>;
+//    using Ordering = NodeIndexOrdering<>;
+    using Ordering = MinDegreeOrdering<Graph>;
 
 public:
     Matrix(DiagonalWeight diag, Graph weight, Element coupStr = {1.0})

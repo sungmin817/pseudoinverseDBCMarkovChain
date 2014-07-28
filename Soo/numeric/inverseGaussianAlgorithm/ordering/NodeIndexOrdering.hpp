@@ -16,6 +16,7 @@ public:
 	{}
 
 	Index top() const {
+        std::cout << index << " is killed\n";
 		return index;
 	}
 

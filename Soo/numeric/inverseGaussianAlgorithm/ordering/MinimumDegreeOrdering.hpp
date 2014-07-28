@@ -31,7 +31,7 @@ public:
     }
 
     IntType top() const {
-        std::cout << pq.top().second << std::endl;
+        std::cout << pq.top().second << " is killed\n";
         return pq.top().second;
     }
 
