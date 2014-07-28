@@ -1,4 +1,4 @@
 pseudoinverse
 =============
 
-an algorithm for calculating the diagonal elements of Markov chain generator matrix
+An algorithm for calculating O(N) elements of Markov chain generator matrix satisfying detailed balance condition.
